@@ -1,0 +1,15 @@
+[user]
+	name = Riccardo Bucchi
+	email = <put-email-inhere> 
+[alias]
+	tree = log --graph --decorate --pretty=oneline --abbrev-commit
+	st = status -sb
+	last = log -1 HEAD
+	short = log --oneline -n 10 
+	log-grep = log --grep 
+	fixup = commit --amend --no-edit
+	unwip = reset --soft HEAD^
+	wip = add -A && git commit -m WIP
+	g = grep --break --heading --line-number
+	ec = config --global -e
+	stash-name = stash save
